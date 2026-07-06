@@ -8,6 +8,7 @@ Starcat is a native macOS app that turns GitHub Stars into a searchable AI knowl
 
 ```bash
 brew tap dong4j/starcat
+brew trust dong4j/starcat
 brew install --cask starcat
 ```
 
