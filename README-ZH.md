@@ -2,11 +2,11 @@
 <a href="https://starcat.ink"><img src="./assets/banner.webp" width="100%" alt="Starcat" align="center"/></a>
 
 <h2>Homebrew Starcat</h2>
-<p>The official Homebrew tap for installing and updating Starcat, a native macOS GitHub Stars manager and AI knowledge organizer.</p>
+<p>Starcat 官方 Homebrew tap，用于安装和更新 Starcat。Starcat 是一款原生 macOS GitHub Stars 管理与 AI 知识整理工具。</p>
 
 <a href="https://github.com/dong4j/homebrew-starcat"><img src="https://img.shields.io/badge/Install%20with-Homebrew-FBBF24?style=for-the-badge&logo=homebrew&logoColor=white" width="220" alt="Install with Homebrew"/></a>
 <br/>
-<sub><a href="./README-ZH.md">中文说明</a></sub>
+<sub><a href="./README.md">English</a></sub>
 </div>
 
 <br />
@@ -22,15 +22,15 @@
 
 ## About Starcat
 
-**Starcat** turns GitHub Stars into a searchable AI knowledge base. It syncs starred repositories into a native macOS workspace, renders README content, supports tags, private notes, release tracking, repository health signals, AI summaries, semantic search, Browser Plugin workflows and more.
+**Starcat** 可以把 GitHub Stars 变成可搜索的 AI 知识库。它会把 starred repositories 同步到原生 macOS 工作区，渲染 README，支持标签、私有笔记、Release 追踪、仓库健康度信号、AI 摘要、语义搜索、Browser Plugin 工作流等能力。
 
 <div align="center">
-<img width="900" src="./assets/main.webp" alt="Starcat main window"/>
+<img width="900" src="./assets/main.webp" alt="Starcat 主窗口"/>
 </div>
 
 ## Install
 
-Homebrew is the preferred installation method for the Direct build:
+Homebrew 是 Direct 版本的首选安装方式：
 
 ```bash
 brew tap dong4j/starcat
@@ -38,7 +38,7 @@ brew trust dong4j/starcat
 brew install --cask starcat
 ```
 
-The tap name is `dong4j/starcat`; the GitHub repository is `dong4j/homebrew-starcat`, following Homebrew's tap naming convention.
+tap 名称是 `dong4j/starcat`；GitHub 仓库是 `dong4j/homebrew-starcat`，这是 Homebrew tap 的命名约定。
 
 ## Upgrade
 
@@ -47,7 +47,7 @@ brew update
 brew upgrade --cask starcat
 ```
 
-The cask uses Starcat's Sparkle appcast for `livecheck`:
+cask 使用 Starcat 的 Sparkle appcast 做 `livecheck`：
 
 ```ruby
 livecheck do
@@ -56,13 +56,13 @@ livecheck do
 end
 ```
 
-Homebrew uses the Sparkle feed to detect new versions, then downloads the versioned DMG declared in the cask:
+Homebrew 使用 Sparkle feed 检测新版本，然后下载 cask 中声明的版本化 DMG：
 
 ```ruby
 url "https://starcat.ink/downloads/Starcat-#{version}-arm64.dmg"
 ```
 
-The app's own in-app updates also use the Sparkle appcast. Homebrew and Sparkle therefore share the same release feed and download host, but Homebrew still performs its own install/upgrade flow.
+Starcat 应用内更新也使用同一个 Sparkle appcast。也就是说，Homebrew 和 Sparkle 共用同一套版本 feed 和下载域名，但 Homebrew 仍然执行自己的安装 / 更新流程。
 
 ## Uninstall
 
@@ -70,17 +70,17 @@ The app's own in-app updates also use the Sparkle appcast. Homebrew and Sparkle 
 brew uninstall --cask starcat
 ```
 
-The cask zap is scoped to the Direct build bundle id, `com.starcat.app.direct`.
+cask 的 `zap` 只针对 Direct 版本的 bundle id：`com.starcat.app.direct`。
 
 ## Requirements
 
-- macOS 15 Sequoia or newer.
-- Apple Silicon Mac.
+- macOS 15 Sequoia 或更高版本。
+- Apple Silicon Mac。
 
 ## Links
 
-- Website: https://starcat.ink
-- Public support and release notes: https://github.com/dong4j/starcat-pro
-- Localization: https://github.com/dong4j/starcat-localization
-- Release notes: https://starcat.ink/changelog.html
-- Cask source: [Casks/starcat.rb](./Casks/starcat.rb)
+- 官网：https://starcat.ink
+- 公开支持与发布说明：https://github.com/dong4j/starcat-pro
+- 本地化：https://github.com/dong4j/starcat-localization
+- 发布说明：https://starcat.ink/changelog.html
+- Cask 源码：[Casks/starcat.rb](./Casks/starcat.rb)
