@@ -1,0 +1,22 @@
+name: Audit Cask
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Audit Starcat Cask
+        run: |
+          brew style Casks/starcat.rb
+          # Homebrew audit 需要已安装的 tap 名称，不能直接传仓库内相对路径。
+          brew tap starcat-app/starcat "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
+          brew audit --strict --cask starcat-app/starcat/starcat
