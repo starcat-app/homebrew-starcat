@@ -1,6 +1,6 @@
 cask "starcat" do
-  version "1.0.0"
-  sha256 "164482a6b1040865ef51b44c615ef80308459772f2e7bf5989f5eb3fa8f1b152"
+  version "1.2.0"
+  sha256 "900944bec7577e150bc0cdd363de4a5270c2ef463760b89248bec592626d67ae"
 
   url "https://starcat.ink/downloads/Starcat-#{version}-arm64.dmg"
   name "Starcat"
