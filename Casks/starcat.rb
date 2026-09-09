@@ -1,8 +1,8 @@
 cask "starcat" do
-  version "1.6.1,202609092151"
+  version "1.6.1"
   sha256 "d5fc5df47f4718072dabb4e44a5de47c403b3a0c3a1e3cb5c9e52997871ce24f"
 
-  url "https://starcat.ink/downloads/Starcat-#{version.csv.first}-arm64.dmg"
+  url "https://starcat.ink/downloads/Starcat-#{version}-arm64.dmg"
   name "Starcat"
   desc "GitHub Stars manager and AI knowledge organizer"
   homepage "https://starcat.ink/"
