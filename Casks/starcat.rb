@@ -9,7 +9,7 @@ cask "starcat" do
 
   livecheck do
     url "https://starcat.ink/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   depends_on arch: :arm64
