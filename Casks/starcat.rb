@@ -2,14 +2,14 @@ cask "starcat" do
   version "1.8.0"
   sha256 "84fad65987626afe406e974a239078a44af2a74c1a2fb4973149dff9607104f3"
 
-  url "https://starcat.ink/downloads/Starcat-#{version}-arm64.dmg"
+  url "https://starcat.ink/downloads/Starcat-#{version.csv.first}-arm64.dmg"
   name "Starcat"
   desc "GitHub Stars manager and AI knowledge organizer"
   homepage "https://starcat.ink/"
 
   livecheck do
     url "https://starcat.ink/appcast.xml"
-    strategy :sparkle, &:short_version
+    strategy :sparkle
   end
 
   depends_on arch: :arm64
