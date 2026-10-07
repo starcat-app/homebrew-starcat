@@ -12,7 +12,7 @@
 
 本仓库是 Starcat Direct 版的官方 Homebrew tap。核心是 Ruby Homebrew Cask，
 通过 `https://starcat.ink/appcast.xml` 的 Sparkle feed 检测版本，并从
-`https://starcat.ink/downloads/` 下载已签名、公证的 Apple Silicon DMG。
+`starcat-app/Starcat` 的 GitHub Release 下载已签名、公证的 Apple Silicon DMG。
 
 - Homebrew Cask DSL / Ruby
 - GitHub Actions macOS runner

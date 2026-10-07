@@ -86,7 +86,7 @@ end
 Homebrew 使用 Sparkle feed 检测新版本，然后下载 cask 中声明的版本化 DMG：
 
 ```ruby
-url "https://starcat.ink/downloads/Starcat-#{version}-arm64.dmg"
+url "https://github.com/starcat-app/Starcat/releases/download/v#{version}/Starcat-#{version}-arm64.dmg"
 ```
 
 Starcat 应用内更新也使用同一个 Sparkle appcast。也就是说，Homebrew 和 Sparkle 共用同一套版本 feed 和下载域名，但 Homebrew 仍然执行自己的安装 / 更新流程。

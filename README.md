@@ -86,7 +86,7 @@ end
 Homebrew uses the Sparkle feed to detect new versions, then downloads the versioned DMG declared in the cask:
 
 ```ruby
-url "https://starcat.ink/downloads/Starcat-#{version}-arm64.dmg"
+url "https://github.com/starcat-app/Starcat/releases/download/v#{version}/Starcat-#{version}-arm64.dmg"
 ```
 
 The app's own in-app updates also use the Sparkle appcast. Homebrew and Sparkle therefore share the same release feed and download host, but Homebrew still performs its own install/upgrade flow.
