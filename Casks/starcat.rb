@@ -1,6 +1,6 @@
 cask "starcat" do
-  version "1.9.0"
-  sha256 "4423c577beaab35202e6e83584089ec3ae664c918b6776284f0392782d1198f9"
+  version "1.9.1"
+  sha256 "047f734ac20418b8572b0fb04db4715067d598e29c39d67b9541f5503354815e"
 
   # 与 Sparkle 清单共用 GitHub Release，后续版本不再依赖阿里云 DMG 副本。
   url "https://github.com/starcat-app/Starcat/releases/download/v#{version.csv.first}/Starcat-#{version.csv.first}-arm64.dmg"
